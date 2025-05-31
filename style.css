@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playwrite+HR+Lijeva:wght@100..400&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+}
+.side-bar,
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.search-box {
+  justify-content: flex-start;
+}
+.side-bar-container,
+.search-box-container {
+  flex-direction: column;
+  display: flex;
+  width: 250px;
+  height: 100%;
+  padding: 0 16px;
+}
+.search-box-container {
+  width: 350px;
+  margin-left: 30px;
+  flex-direction: column;
+}
+.search-box-container > input[type="text"] {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 24px;
+  background-color: #202327;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+
+  padding: 4px 0;
+  margin-top: 4px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.group:hover {
+  background-color: #16181c;
+}
+.nav-menu .group > span {
+  margin-left: 20px;
+  color: white;
+}
+.tweet-btn {
+  height: 52px;
+  width: 100%;
+  margin: 16px 0;
+  border-radius: 52px;
+  background-color: #219bf0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.profile-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.profile {
+  margin: 12px 0;
+  height: 64px;
+  width: 100%;
+  background-color: #16181c;
+  border-radius: 64px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  width: 100%;
+  padding: 0 16px;
+  color: white;
+  margin: 10px 0;
+}
+.tweet-section {
+  display: flex;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0 16px;
+}
+.tweet-profile {
+  width: 48px;
+  height: 108px;
+  margin-right: 12px;
+  padding: 4px;
+}
+.write-tweet {
+  flex: 1;
+}
+.profile-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  background-color: beige;
+}
+input[type="text"] {
+  height: 52px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.icon-section {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.feed {
+  flex: 1;
+}
+.tweet {
+  padding: 0 16px;
+  padding-top: 12px;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.tweet-content {
+  position: relative;
+  flex: 1;
+}
+.name {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+.name > span {
+  opacity: 0.5;
+}
+.text-content {
+  color: white;
+  font-size: 14px;
+}
+.tweet-photo {
+  width: 408px;
+  height: 510px;
+  background-color: aquamarine;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+
+.action-group {
+  width: 408px;
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.running-number {
+  margin-left: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.more-button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.more-button:hover {
+  background-color: #16181c;
+}
+.trend-container,
+.account-container {
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #16181c;
+}
+.trend,
+.account {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 82px;
+  padding: 12px 16px;
+  font-size: 13px;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.account {
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+}
+
+.trend > span:nth-child(2) {
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+h2 {
+  color: white;
+  padding-left: 16px;
+}
+
+.show-more {
+  padding: 16px;
+  color: rgb(29, 155, 240);
+}
+
+.account-container {
+  margin-top: 16px;
+}
+
+.account-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-btn {
+  height: 32px;
+  width: 77px;
+  padding: 0 16px;
+  border-radius: 18px;
+  border: none;
+  font-weight: bold;
+}
