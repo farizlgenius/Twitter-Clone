@@ -29,7 +29,7 @@ twitter-clone/
 
 > Add screenshots here if you'd like  
 > Example:
-> ![Home Page](./screenshots/home.png)
+> ![Home Page](./screenshot/home.png)
 
 ---
 
